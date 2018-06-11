@@ -9,7 +9,9 @@ springboot-security-demo2
 NEXT
 - User authentication management
 - Method level security
-
+  - @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
+  - @PreAuthorize("hasRole('ADMIN')"), @Secured({"ROLE_USER", "ROLE_ADMIN"})
+  
 ## Reference
 
 - http://spring.io/guides/gs/securing-web/
